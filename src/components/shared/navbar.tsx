@@ -24,7 +24,6 @@ export default function Navbar() {
             <Link href="/" className="hover:text-[#D4AF37] transition-colors">Home</Link>
             <Link href="/shop" className="hover:text-[#D4AF37] transition-colors">Shop</Link>
             <Link href="/categories" className="hover:text-[#D4AF37] transition-colors">Categories</Link>
-            <Link href="/deals" className="hover:text-[#D4AF37] transition-colors">Deals</Link>
             <Link href="/contact" className="hover:text-[#D4AF37] transition-colors">Contact</Link>
           </nav>
 
