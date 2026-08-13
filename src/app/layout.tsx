@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Inter, Geist } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import Navbar from "@/components/shared/navbar";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -44,7 +45,9 @@ export default function RootLayout({
       lang="en"
       className={cn("h-full", "antialiased", inter.variable, jakarta.variable, "font-sans", geist.variable)}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        <Navbar/>
+        {children}</body>
     </html>
   );
 }
